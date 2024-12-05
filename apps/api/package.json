@@ -1,0 +1,27 @@
+{
+	"name": "@my-database/api",
+	"type": "module",
+	"scripts": {
+		"dev": "wrangler dev",
+		"deploy": "wrangler deploy --minify"
+	},
+	"exports": {
+		".": "./src/server.ts"
+	},
+	"dependencies": {
+		"dotenv": "^16.4.7",
+		"drizzle-orm": "^0.37.0",
+		"hono": "^4.6.12"
+	},
+	"devDependencies": {
+		"@cloudflare/workers-types": "^4.20241202.0",
+		"@types/node": "^22.10.1",
+		"drizzle-kit": "^0.29.1",
+		"drizzle-zod": "^0.5.1",
+		"tsx": "^4.19.2",
+		"wrangler": "^3.92.0",
+		"zod": "^3.23.8",
+		"@hono/zod-validator": "^0.4.1"
+	},
+	"packageManager": "pnpm@9.9.0+sha512.60c18acd138bff695d339be6ad13f7e936eea6745660d4cc4a776d5247c540d0edee1a563695c183a66eb917ef88f2b4feb1fc25f32a7adcadc7aaf3438e99c1"
+}
