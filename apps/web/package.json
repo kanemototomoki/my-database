@@ -1,5 +1,5 @@
 {
-	"name": "@my-database/web",
+	"name": "@my-notes/web",
 	"private": true,
 	"type": "module",
 	"scripts": {
@@ -10,7 +10,7 @@
 	},
 	"dependencies": {
 		"@hono/zod-validator": "^0.4.1",
-		"@my-database/api": "workspace:*",
+		"@my-notes/api": "workspace:*",
 		"@react-router/node": "^7.0.2",
 		"@react-router/serve": "^7.0.2",
 		"hono": "^4.6.12",
