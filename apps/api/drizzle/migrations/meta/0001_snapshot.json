@@ -1,8 +1,8 @@
 {
   "version": "6",
   "dialect": "sqlite",
-  "id": "572ff488-f264-4f08-b21a-93250e36d84e",
-  "prevId": "00000000-0000-0000-0000-000000000000",
+  "id": "07ae0931-64e1-45e1-905d-54f8537e3fec",
+  "prevId": "572ff488-f264-4f08-b21a-93250e36d84e",
   "tables": {
     "notes": {
       "name": "notes",
@@ -40,7 +40,7 @@
           "name": "createdAt",
           "type": "integer",
           "primaryKey": false,
-          "notNull": false,
+          "notNull": true,
           "autoincrement": false,
           "default": "CURRENT_TIMESTAMP"
         },
@@ -48,7 +48,7 @@
           "name": "updatedAt",
           "type": "integer",
           "primaryKey": false,
-          "notNull": false,
+          "notNull": true,
           "autoincrement": false,
           "default": "CURRENT_TIMESTAMP"
         }

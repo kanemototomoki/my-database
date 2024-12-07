@@ -11,3 +11,6 @@ enabled = true
 # Bind a D1 database
 [[d1_databases]]
 binding = "DB"
+database_id = "4ae27f92-0b43-4671-b9fd-6c86cfea64ca"
+database_name = "my-notes"
+migrations_dir = "drizzle/migrations"
