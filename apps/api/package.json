@@ -7,8 +7,8 @@
 		"test": "vitest run",
 		"test:ui": "vitest run --ui",
 		"generate": "drizzle-kit generate",
-		"local:migrate": "wrangler d1 migrations apply my-notes --local",
-		"remote:migrate": "wrangler d1 migrations apply my-notes --remote"
+		"migrate:local": "wrangler d1 migrations apply my-notes --local",
+		"migrate:remote": "wrangler d1 migrations apply my-notes --remote"
 	},
 	"exports": {
 		".": "./src/index.ts"

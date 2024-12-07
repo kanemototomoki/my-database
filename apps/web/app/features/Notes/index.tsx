@@ -7,7 +7,7 @@ type Props = {
 export const Notes: FC<Props> = memo(({ notes }) => {
 	return (
 		<>
-			<h1>Users</h1>
+			<h1>Notes</h1>
 			<ul>
 				<table className="min-w-full divide-y divide-gray-200">
 					<thead className="bg-gray-50">

@@ -14,10 +14,10 @@ export async function loader({ context }: Route.LoaderArgs) {
 	const res = await client.api.notes.$get({
 		query: {},
 	});
-	const users = await res.json();
+	const notes = await res.json();
 	// return { message: context.VALUE_FROM_CLOUDFLARE };
 
-	return { users };
+	return { notes };
 }
 
 export default function Home({ loaderData }: Route.ComponentProps) {
