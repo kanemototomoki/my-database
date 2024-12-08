@@ -13,7 +13,7 @@
 		"@my-notes/api": "workspace:*",
 		"@react-router/node": "^7.0.2",
 		"@react-router/serve": "^7.0.2",
-		"hono": "^4.6.12",
+		"hono": "^4.6.13",
 		"isbot": "^5.1.17",
 		"react": "^18.3.1",
 		"react-dom": "^18.3.1",
