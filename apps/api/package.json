@@ -8,7 +8,9 @@
 		"test:ui": "vitest run --ui",
 		"generate": "drizzle-kit generate",
 		"migrate:local": "wrangler d1 migrations apply my-notes --local",
-		"migrate:remote": "wrangler d1 migrations apply my-notes --remote"
+		"migrate:remote": "wrangler d1 migrations apply my-notes --remote",
+		"db-reset:local": "wrangler d1 execute my-notes --file ./drizzle/reset.sql --local",
+		"db-reset:remote": "wrangler d1 execute my-notes --file ./drizzle/reset.sql --remote"
 	},
 	"exports": {
 		".": "./src/index.ts"

@@ -5,6 +5,7 @@ type Props = {
 	notes: Note[];
 };
 export const Notes: FC<Props> = memo(({ notes }) => {
+
 	return (
 		<>
 			<h1>Notes</h1>
