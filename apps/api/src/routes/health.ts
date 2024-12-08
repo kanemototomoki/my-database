@@ -1,9 +1,8 @@
 import { Hono } from "hono";
-import type { Env } from "..";
 
-const app = new Hono<{ Bindings: Env }>();
+const app = new Hono();
 
-const healthApp = app.get("/health", (c) => {
+const healthApp = app.get("/", (c) => {
 	return c.json({
 		message: "OK",
 	});

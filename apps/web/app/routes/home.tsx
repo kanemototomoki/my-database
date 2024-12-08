@@ -22,5 +22,7 @@ export async function loader({ context }: Route.LoaderArgs) {
 
 export default function Home({ loaderData }: Route.ComponentProps) {
 	const { notes } = loaderData;
+
+
 	return <Notes notes={notes} />;
 }

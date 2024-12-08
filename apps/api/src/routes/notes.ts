@@ -1,6 +1,5 @@
 import { zValidator } from "@hono/zod-validator";
 import { Hono } from "hono";
-import type { Env } from "..";
 import { insertNoteSchema, notes, selectNoteSchema } from "../schemas/notes";
 import { getDb } from "../utils";
 
@@ -13,9 +12,9 @@ const notesApp = app
 
 		return c.json(result);
 	})
-	.post("/", zValidator("form", insertNoteSchema), async (c) => {
+	.post("/", zValidator("json", insertNoteSchema), async (c) => {
 		console.log("log test");
-		const params = c.req.valid("form");
+		const params = c.req.valid("json");
 
 		const db = getDb(c);
 		const result = await db.insert(notes).values(params).execute();

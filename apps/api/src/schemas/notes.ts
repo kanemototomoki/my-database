@@ -12,12 +12,9 @@ const notes = sqliteTable("notes", {
 	title: text().notNull(),
 	content: text().notNull(),
 	status: text("status", { enum: STATUS }).notNull().default("draft"),
-	createdAt: integer({ mode: "timestamp" })
-		.notNull()
-		.default(sql`CURRENT_TIMESTAMP`),
-	updatedAt: integer({ mode: "timestamp" })
-		.notNull()
-		.default(sql`CURRENT_TIMESTAMP`),
+	// @see timestamp https://orm.drizzle.team/docs/guides/timestamp-default-value#sqlite
+	createdAt: text("timestamp").notNull().default(sql`(current_timestamp)`),
+	updatedAt: text("timestamp").notNull().default(sql`(current_timestamp)`),
 });
 
 type Note = typeof notes.$inferSelect;
